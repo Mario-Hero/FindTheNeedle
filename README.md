@@ -3,6 +3,8 @@
 
 A first-person 3D game built with Godot 4 — locate the single needle hidden inside a fully physics-simulated haystack of ten thousands of straws.
 
+![](screenshot.jpg)
+
 
 ## 玩法 / How to Play
 找到隐藏在稻草堆中的银色针并左键点击即可获胜。
