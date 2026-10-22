@@ -1,0 +1,57 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[application]
+
+config/name="大海捞针"
+run/main_scene="res://scenes/main.tscn"
+config/features=PackedStringArray("4.7", "Forward Plus")
+
+[display]
+
+window/size/viewport_width=1600
+window/size/viewport_height=900
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/godot_mcp/plugin.cfg")
+
+[physics]
+
+common/physics_ticks_per_second=30
+3d/physics_engine="Jolt Physics"
+jolt_physics_3d/simulation/velocity_steps=8
+jolt_physics_3d/simulation/penetration_slop=0.01
+jolt_physics_3d/simulation/speculative_contact_distance=0.002
+jolt_physics_3d/simulation/baumgarte_stabilization_factor=1.0
+jolt_physics_3d/simulation/sleep_velocity_threshold=0.7
+jolt_physics_3d/simulation/sleep_time_threshold=0.25
+jolt_physics_3d/simulation/continuous_cd_max_penetration=0.02
+jolt_physics_3d/motion_queries/use_enhanced_internal_edge_removal=false
+jolt_physics_3d/motion_queries/recovery_amount=1.0
+jolt_physics_3d/limits/temporary_memory_buffer_size=2048
+jolt_physics_3d/limits/world_boundary_shape_size=1000.0
+jolt_physics_3d/limits/max_linear_velocity=50.0
+jolt_physics_3d/limits/max_angular_velocity=10.471975511965978
+jolt_physics_3d/limits/max_bodies=655360
+jolt_physics_3d/limits/max_body_pairs=1048576
+jolt_physics_3d/limits/max_contact_constraints=5242880
+3d/default_angular_damp=50.0
+3d/sleep_threshold_linear=1.0
+3d/sleep_threshold_angular=0.8726646259971648
+3d/time_before_sleep=0.1
+3d/solver/solver_iterations=14
+3d/solver/default_contact_bias=1.0
+common/physics_interpolation=true
+jolt_physics_3d/sleep/velocity_threshold=0.05
+
+[rendering]
+
+anti_aliasing/quality/msaa_3d=2
